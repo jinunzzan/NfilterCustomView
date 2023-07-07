@@ -14,6 +14,7 @@
 		5964B18A2A57A1F300B5BB64 /* NfilterCustomView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5964B1882A57A1F300B5BB64 /* NfilterCustomView.xcdatamodeld */; };
 		5964B18C2A57A1F400B5BB64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5964B18B2A57A1F400B5BB64 /* Assets.xcassets */; };
 		5964B18F2A57A1F400B5BB64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5964B18D2A57A1F400B5BB64 /* LaunchScreen.storyboard */; };
+		5964B1992A57A2B400B5BB64 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5964B1982A57A2B400B5BB64 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5964B1992A57A2B400B5BB64 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +46,7 @@
 			children = (
 				5964B17E2A57A1F300B5BB64 /* NfilterCustomView */,
 				5964B17D2A57A1F300B5BB64 /* Products */,
+				5964B1972A57A2B400B5BB64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +73,13 @@
 			path = NfilterCustomView;
 			sourceTree = "<group>";
 		};
+		5964B1972A57A2B400B5BB64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,6 +96,9 @@
 			dependencies = (
 			);
 			name = NfilterCustomView;
+			packageProductDependencies = (
+				5964B1982A57A2B400B5BB64 /* SnapKit */,
+			);
 			productName = NfilterCustomView;
 			productReference = 5964B17C2A57A1F300B5BB64 /* NfilterCustomView.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 5964B1732A57A1F300B5BB64;
+			packageReferences = (
+				5964B1962A57A28000B5BB64 /* XCRemoteSwiftPackageReference "Snapkit" */,
+			);
 			productRefGroup = 5964B17D2A57A1F300B5BB64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5964B1962A57A28000B5BB64 /* XCRemoteSwiftPackageReference "Snapkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/Snapkit/Snapkit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5964B1982A57A2B400B5BB64 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5964B1962A57A28000B5BB64 /* XCRemoteSwiftPackageReference "Snapkit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5964B1882A57A1F300B5BB64 /* NfilterCustomView.xcdatamodeld */ = {
